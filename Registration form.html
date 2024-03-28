@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="file:///C:/Users/HP/Desktop/FEE1/IMG-20230911-WA0001%20(1).jpg"type="image/x-icon">
+ 
+   <title>update</title>
+
+   <!-- font awesome cdn link -->
+                              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" media="all"/>
+
+<!-- bootstrap file-->
+
+
+<link
+href="css/bootstrap.min.css"rel="stylesheet">
+
+  
+
+  <!-- custom css file link  -->
+ 
+ <link type="text/css" rel="stylesheet" href="stule1.css" media="all"/>
+
+
+<script type="text/javascript">
+function sayHello()
+{
+alert("You're not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You're not allowed to attempt to extract the source code of the app, and you also shouldn't try to translate the app into other languages, or make derivative versions.Thanks")
+}
+</script>
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home.html" class="logo">EASY LINGUAL</a>
+
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+		<div id="mic-btn" class="fa-solid fa-microphone"></div>
+
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">shaikh anas</h3>
+         <p class="role">student</p>
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+		
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">shaikh anas</h3>
+      <p class="role">student</p>
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="login.html"><span>login</span></a>
+       <a href="register.html"><span>register</span></a>
+      <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+	  <a href="Games.html"><span>Games</span></a>
+      <a href="image Gallery.html"><span>image Gallery</span></a>
+     <a href="Alerts.html"><span>Alerts</span></a>
+	  <a href="playlist.html"><span>vedio playlist</span></a>  
+       <a href="Test.HTML"><span>Test</span></a>	  
+   </nav>
+
+</div>
+
+<center><h1>Registration Form</h1></center>
+
+<img align="right" src="https://t3.ftcdn.net/jpg/03/69/34/00/360_F_369340061_MvunfMoSfYTQwYEoGFbc2Kb0iUORz9oC.jpg" alt="">
+
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+<li><label for="userid">User id:</label></li>
+<li><input type="text" name="userid" size="12" /></li>
+<li><label for="passid">Password:</label></li>
+<li><input type="password" name="passid" size="12" /></li>
+<li><label for="username">Name:</label></li>
+<li><input type="text" name="username" size="50" /></li>
+<li><label for="address">Address:</label></li>
+<li><input type="text" name="address" size="50" /></li>
+<li><label for="country">Country:</label></li>
+<li><select name="country">
+<option selected="" value="Default">(Please select a
+country)</option>
+<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+</select></li>
+<li><label for="zip">ZIP Code:</label></li>
+<li><input type="text" name="zip" /></li>
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" /></li>
+<li><label id="gender">Sex:</label></li>
+<li><input type="radio" name="msex" value="Male"
+/><span>Male</span></li>
+<li><input type="radio" name="fsex" value="Female"
+/><span>Female</span></li>
+<li><label>Language:</label></li>
+<li><input type="checkbox" name="en" value="en" checked
+/><span>English</span></li>
+<li><input type="checkbox" name="nonen" value="noen"
+/><span>Non English</span></li>
+<li><label for="desc">About:</label></li>
+<li><textarea name="desc" id="desc"></textarea></li>
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2023 by <span>Team Easy lingual</span> | all rights reserved!
+
+<p>Click below button to see terms and condition</p>
+<input type="button" onclick="sayHello()" value="Terms and Condition " />
+
+
+</footer>
+
+ </body> 
+ </html>

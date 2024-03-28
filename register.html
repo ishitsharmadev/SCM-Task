@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="file:///C:/Users/HP/Desktop/FEE1/IMG-20230911-WA0001%20(1).jpg"type="image/x-icon">
+
+
+   <title>register</title>
+
+   <!-- font awesome cdn link  -->
+                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" media="all"/>
+
+<!-- bootstrap file-->
+
+
+<link
+href="css/bootstrap.min.css"rel="stylesheet">
+
+   
+   <!-- custom css file link  -->
+                     <link type="text/css" rel="stylesheet" href="stule1.css" media="all"/>
+
+<style>
+body{
+background-image:url("https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2011/7/12/0/iStock-14646391_Japanese-maple-walkway-fall_s4x3.jpg.rend.hgtvcom.1280.1280.suffix/1400964322069.jpeg");
+}
+</style>
+
+<script type="text/javascript">
+function sayHello()
+{
+alert("You're not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You're not allowed to attempt to extract the source code of the app, and you also shouldn't try to translate the app into other languages, or make derivative versions.Thanks")
+}
+</script>
+
+
+
+</head>
+
+
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home.html" class="logo">EASY LINGUAL</a>
+
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+		 <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+		<div id="mic-btn" class="fa-solid fa-microphone"></div>
+				 </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">shaikh anas</h3>
+         <p class="role">student</p>
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+			
+			 </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">shaikh anas</h3>
+      <p class="role">student</p>
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+    <a href="Registration form.html"><span>Register Form</a>
+        <a href="login.html"><span>login</span></a>
+       <a href="register.html"><span>Sign Up</span></a>
+	 <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+	 <a href="Games.html"><span>Games</span></a>
+      <a href="image Gallery.html"><i class="fas-fa-image"></i><span>image Gallery</span></a>
+      <a href="Alerts.html"><span>Alerts</span></a>
+	  <a href="playlist.html"><span>vedio playlist</span></a>
+	   <a href="Test.HTML"><span>Test</span></a>
+	  </nav>
+
+</div>
+
+
+
+
+
+
+<section class="form-container">
+
+<form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()" >
+ 
+  <form action="" method="post" action="abc.jsp" onsubmit="return validateform()"  enctype="multipart/form-data" name="f1">
+      <h3>Sign Up now</h3>
+      <p>your name <span>*</span></p>
+      <input type="text" name="name" placeholder="enter your name" required maxlength="50" class="box">
+      <p>your email <span>*</span></p>
+      <input type="email" name="email" placeholder="enter your email" required maxlength="50" class="box">
+      <p>your password <span>*</span></p>
+      <input type="password" name="password" placeholder="enter your password" required maxlength="20" class="box">
+      <p>confirm password <span>*</span></p>
+      <input type="password" name="password2" placeholder="confirm your password" required maxlength="20" class="box">
+      <p>select profile <span>*</span></p>
+      <input type="file" accept="image/*" required class="box">
+      <input type="submit" value="Create Account" name="submit" class="btn">
+   </form>
+
+</section>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<footer class="footer">
+
+   &copy; copyright @ 2023 by <span>Team Easy lingual</span> | all rights reserved!
+<p>Click below button to see terms and condition</p>
+<input type="button" onclick="sayHello()" value="Terms and Condition " />
+
+
+
+
+
+</footer>
+
+<script>
+function validateform(){
+var name=document.myform.name.value;
+var password=document.myform.password.value;
+if (name==null || name==""){
+alert("Name can't be blank");
+return false;
+}else if(password.length<6){
+alert("Password must be at least 6 characters long.");
+return false;
+} }
+
+function matchpass(){
+var firstpassword=document.f1.password.value;
+var secondpassword=document.f1.password2.value;
+if(firstpassword==secondpassword){
+return true;
+}
+else{
+alert("password must be same!");
+return false;
+} }
+</script>
+
+
+</body>
+
+</html>
